@@ -57,35 +57,11 @@ python -m bots.doma_hot_domains_bot
 
 The bot will fetch and tweet domains immediately, then continue every 6 hours.
 
-Project Structure
-domain-twitter-doma-bot/
-│
-├─ bots/
-│   ├─ doma_hot_domains_bot.py      # live domain alerts bot
-│   └─ doma_namebio_bot.py          # optional, NameBio bot
-│
-├─ config/
-│   └─ .env                        # API keys (not committed)
-│
-├─ utils/
-│   └─ domain_utils.py             # domain fetching & filtering
-│
-└─ requirements.txt                # Python dependencies
 
 Notes
-
 Avoid tweeting the same domain twice by using a local cache (future improvement).
-
 Make sure your IP isn’t blocked by GoDaddy if running frequently.
-
 Currently, NameBio integration is optional; the bot works with GoDaddy only.
 
 License
-
 MIT License
-
-
-
-If you want, I can also write a .env.example file so contributors know exactly what keys to add without exposing your secrets.
-
-Do you want me to do that next?
